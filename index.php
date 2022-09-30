@@ -1,5 +1,5 @@
 <?php 
-include'assets/bbdd_proyecto/DataBase.php';
+// include'assets/bbdd_proyecto/DataBase.php';
   if (isset($_SESSION['id'])) {
     $records = $conn->prepare('SELECT id_usuario, correo_usuario, contraseña_usuario FROM usuarios WHERE id_usuario = :id');
     $records->bindParam(':id_usuario', $_SESSION['id']);
