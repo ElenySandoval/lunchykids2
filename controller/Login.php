@@ -1,6 +1,6 @@
 <?php
 
-include '../assets/bbdd_proyecto/DataBase.php';
+require '../assets/bbdd_proyecto/DataBase.php';
 
  if (isset($_SESSION['id'])) {
     header('Location: Login.php');
