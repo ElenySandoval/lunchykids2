@@ -42,6 +42,10 @@
 
 
         <h1>Crear Usuario</h1>
+
+        <section class="overview-section p-3 p-lg-5">
+        <h2 class="section-title font-weight-bold mb-3">¿Cómo Funciona?</h2>
+        <div class="section-intro mb-5">En este espacio tendrás la posibilidad de ingresar los datos nuevos usuarios para ser almacenados en el sistema. Podrás consultarlos posteriormente en "consultar".</div> </section>
         <form action="create_user.php" method="POST">
 
           <div class="row">
@@ -71,7 +75,7 @@
                   <div class="col"><input type="text" class="form-control mb-3" name="estado_usuario"
                     placeholder="Estado">
                   </div>
-                  <div class="col"></div>
+                  
 
                   <button type="submit" class="btn btn-primary" name="create_user">Crear</button>
                 </form>

@@ -1,0 +1,10 @@
+{
+    "name": "report/excel",
+    "description": "crear reporte excel",
+    "autoload": {
+        "psr-4": {
+            "Report\\Excel\\": "src/"
+        }
+    },
+    "require": {}
+}

@@ -35,7 +35,7 @@
           <a class="nav-link" href="#contacto">Contactenos</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="../../controller/Login.php">Iniciar Sesión</a>
+          <a class="nav-link" href="../../../CARPETASENA/controller/Login.php">Iniciar Sesión</a>
         </li>
         
         

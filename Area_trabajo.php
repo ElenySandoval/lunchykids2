@@ -11,7 +11,7 @@
 						</div><!--//bio-->
 						<div class="mb-4">
 							<a class="btn btn-primary me-2 mb-3" href="..."><i class="fas fa-arrow-alt-circle-right me-2"></i><span class="d-none d-md-inline"></span> Portfolio</a>
-							<a class="btn btn-secondary mb-3" href="..."><i class="fas fa-file-alt me-2"></i><span class="d-none d-md-inline">Crear</span>Informe</a>
+							<a class="btn btn-secondary mb-3" href="model/4_mod_reports/reporteGeneral_index.php"><i class="fas fa-file-alt me-2"></i><span class="d-none d-md-inline">Crear Informe</span></a>
 						</div>
 					</div><!--//col-->
 					

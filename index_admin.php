@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/tiny-slider.css">
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head> 
 
 <body >
@@ -46,17 +47,31 @@
 							<a class="nav-link" href="model/1_users/create_user.php" target="area"><i class="fas fa-briefcase fa-fw me-2"></i>Crear Usuario</a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="model/1_users/create_ref.php" target="area"><i class="fas fa-briefcase fa-fw me-2"></i>Refrigerios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="model/2_mod_main/create_cur.php" target="area"><i class="fas fa-briefcase fa-fw me-2"></i>Cursos</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="model/1_users/go_consul.php" target="area"><i class="fas fa-blog fa-fw me-2"></i>Consultar</a>
 							
 						</li>
 					</ul>
 					
 					<!-- Split dropright button -->
-<div class="btn-group dropright" style="padding-top: 50px;"
+<div class="btn-group btn-group-lg" style="margin: 45px "
 >
-  <button  type="button" class="btn btn-secondary"><a href="controller/Logout.php"> 
-    Cerrar Sesión
-  </button>
+  <button type="button" class="btn btn-secondary"style="
+    width: 74px;
+    height: 68px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 50px;
+"><a href="controller/Logout.php">
+                <i class="bi bi-power"></i>
+              </button></a>
 
   </div>
 </div>

@@ -14,7 +14,7 @@ require "../assets/bbdd_proyecto/DataBase.php";
     $message = '';
 
     if (count($results) > 0 && password_verify($_POST['contraseña_usuario'], $results['contraseña_usuario'])) {
-      $_SESSION['id'] = $results[':id_usuario'];
+      $_SESSION['id'] = $results[':id'];
       header("Location: ../index_admin.php");
     } else {
       echo 'Sorry, those credentials do not match';

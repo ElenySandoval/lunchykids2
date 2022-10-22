@@ -3,15 +3,56 @@ include("../../assets/bbdd_proyecto/DataBase.php");
  
 ?>
 <link rel="stylesheet" type="text/css" href="../../assets/css/theme-1.css">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <body>
-        <section class=" theme-bg-light">
+   <style type="text/css">
+        a:link, a:visited, a:active {
+            text-decoration:none;
+        }
+    </style>
+        <section>
             <div class="container">
                 <div class='col-md-12'style="
-    margin-top: 50px;
+    margin: 50px 50px 50px 50px;
 ">
 
-       <h1>Consultar Refrigerios</h1>
+     <?php if (isset($_SESSION['message'])) { ?>
+    <div class="alert alert-<?= $_SESSION['message_type']?> alert-dismissible fade show" role="alert">
+        <?= $_SESSION['message']?>
+    <button type="button"  data-dismiss="alert" >
+        <span aria-hidden="true">&times;</span>
+    </button>
+      </div>
+      <?php session_unset(); } ?>
+
+<div class="row">
+  <div class="col-lg-9">
+
+    <h1>Consultar Refrigerios</h1></div>
+
+    <div class="col-lg-3">
+      <div class="btn-group-lg" role="group" aria-label="Second group" style="padding-left: 50px;">
+    <button type="button" class="btn btn-secondary" style="margin-right:10px; ">
+    <a href="../../index_admin.php"><i class="bi bi-arrow-return-left"></i></button></a>
+    
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-secondary"><a href="../4_mod_reports/reporteRef_pdf.php "target="_blank">
+
+      <i class="bi bi-filetype-pdf"></i>
+
+    </button></a>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-secondary"><a href="../4_mod_reports/reporteRef_xls.php"target="_blank">
+
+      <i class="bi bi-file-earmark-spreadsheet"></i>
+
+    </button></a>
+  </div>
+</div>
+  </div>
+</div>
+       </div>
        <br>
         
           </div><!--//col-->
@@ -43,8 +84,8 @@ include("../../assets/bbdd_proyecto/DataBase.php");
                                 <th style="padding: 10px 10px 10px 10px;"><?php  echo $row['hora_refrigerio']?></th> 
                                 <th style="padding: 10px 10px 10px 10px;"><?php  echo $row['tipo_refrigerio']?></th>
                                 <th style="padding: 10px 10px 10px 10px;"><?php  echo $row['descripcion_refrigerio']?></th>
-                                
-                                                                      
+                            
+                                 <th><a href="delete_ref.php?id=<?php echo $row['id_refrigerio']?>" class="btn btn-secondary"><i class="bi bi-trash"></i></a></th>                               
                             </tr>
                             <?php 
                         }
@@ -55,16 +96,7 @@ include("../../assets/bbdd_proyecto/DataBase.php");
         </div>  
     </div>
     
-<div class="btn-group dropright" style="padding-top: 50px;"
->
-  <button  type="button" class="btn btn-secondary" style="
-    border-left-width: 0px;
-    margin-left: 80px;
-"><a href="../../index_admin.php"> 
-    Regresar
-  </button>
 
-  </div>
 
 </body></div>
             
